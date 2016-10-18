@@ -68,11 +68,17 @@ list-style: none;
 }
 
 footer ul li {
+  float: left;
+  margin-left: 15px;
+}
 
-float: left;
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
 
-margin-left: 15px;
-
+.description {
+    margin-top: 0;
 }
 
 
