@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
  
- 
- resources :articles
+   
   root 'pages#home'
   get 'about', to: 'pages#about'
+ 
+  resources :articles
+  
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
+
+
+
+
+  
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
